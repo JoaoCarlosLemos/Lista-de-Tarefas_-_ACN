@@ -1,0 +1,203 @@
+
+/*---------- GERAL ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(to right,#02173d, #204b83, #02173d);
+    color: #fff;
+    z-index: 0;
+}
+
+.background{
+    background-image: url("../imagens/vetor.png");
+    background-size: 50px;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.2;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:400px ;
+    min-height: 300px;
+    background: #ffffff21;
+    margin-top: 20px;
+    border-radius:10px 80px 10px 25px;
+}
+
+
+/*---------- CABEÇÁRIO ----------*/
+
+.container-cabecario{
+    padding-top: 10px;
+    text-align: center;
+    width: 100vw;
+}
+
+#logo-acn{
+    width: 120px;
+}
+
+h1{
+    font-family: 'Damion', cursive;
+    font-weight: 100;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+#formulario-tarefa{
+    display: flex;
+    justify-content: center;
+}
+
+#input-tarefa{
+    box-sizing: border-box;
+    border:none;
+    border-radius: 20px 5px 5px 20px;
+    padding: 5px 10px;
+    width: 250px;
+    color:rgb(1, 141, 255);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#input-tarefa::placeholder{
+    text-align: center;
+    color:#5d5f6188;
+}
+
+#input-tarefa:focus{
+    outline: none;
+}
+
+#btn-adicionar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #018dff ;
+    font-size: 17px;
+    color:#fff;
+    border:none;  
+    height: 28px;
+    width: 28px;
+    border-radius: 8px 0px 8px 0px;
+    margin-left: 5px;
+    cursor: pointer; 
+    box-shadow: 2px 1px 0px rgba(0, 0, 0, 0.096);
+}
+
+#btn-adicionar:active{
+    transform: scale(0.9); 
+}
+
+#data{
+    font-size: 9px;
+    font-weight: 100;
+    letter-spacing: .5px;
+    margin-top:10px;
+    margin-bottom: 7px;
+    color:rgba(255, 255, 255, 0.507);
+}
+
+
+/*---------- LISTA ----------*/
+
+#container-lista{
+    width: 310px ;
+    display: flex;
+    justify-content: center;
+}
+
+#lista{
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
+    background: #ffffff13;
+    border-radius: 7px;
+    margin-top:0px;
+}
+
+.tarefa{
+    display:flex;
+    text-align: left;
+    margin: 7px;
+}
+
+.container-texto{
+    width: 85%;
+    background: #ffffff33;
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.texto-tarefa{
+    font-size: 10px;
+    letter-spacing: .5px;
+}
+
+.btn-checado{
+    height: 12px;
+    width: 12px;
+    background: #018dff;
+    padding: 2px;
+    margin-top: 3px;
+    border-radius: 6px 0px 6px 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.096);
+}
+
+.btn-checado:active{
+    transform: scale(0.8); 
+}
+
+.btn-remover{
+    height: 12px;
+    width: 12px;
+    background: #cc4e4e;
+    padding: 2px;
+    margin-top: 3px;
+    border-radius: 6px 0px 6px 0px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.096);
+}
+
+.btn-remover:active{
+    transform: scale(0.8); 
+}
+
+.invisivel{
+    display:none;
+}
+
+
+.realizado{
+    text-decoration: line-through;
+    color:#0000005b;
+    background: rgba(0, 0, 0, 0.075);
+}
+
+
+
+
+
+
+

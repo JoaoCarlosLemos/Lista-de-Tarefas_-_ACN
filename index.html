@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <div class="background"></div>
+    
+    <div class="container">
+        <div class="container-cabecario">
+            <img  id="logo-acn" src="assets/imagens/logo_acn.png" alt="Logo ACN Contábil">
+            <h1>Lista de Tarefas</h1>
+            <form action="" id="formulario-tarefa">
+                <input type="text" id="input-tarefa" placeholder="Digite aqui a próxima tarefa">
+                <button id="btn-adicionar" type="submit">
+                    <ion-icon name="add-outline" id="icone-adicionar"></ion-icon>
+                </button>
+            </form>
+            <p id="data"></p>
+        </div>
+        <div id="container-lista">
+            <ul id="lista">
+                <li class="tarefa template invisivel">
+                    <div class="container-texto ">
+                        <span class="texto-tarefa"></span>
+                    </div>
+                    <ion-icon class="btn-checado" name="checkmark-outline"></ion-icon>
+                    <ion-icon class="btn-remover" name="close-outline"></ion-icon>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="assets/javascript/scripts.js"></script>
+
+    <!-- SCRIPTS PARA USO DE ICONES EXTERNOS - SITE: https://ionic.io/ionicons -->
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
